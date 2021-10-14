@@ -3,7 +3,6 @@ let botão_add = document.querySelector('#ad')
 let ul = document.querySelector('#lista')
 let select = document.querySelector('#select_situation')
 let remover_tudo = document.querySelector('#remove_all')
-let mensagem_btn_remove_all = document.querySelector('#mensagem_btn_remove_all')
 
 function add() {
     if (txtvalue.value.length != 0) {
@@ -50,13 +49,6 @@ function add() {
         ul.innerHTML = ''
     }
 }
-
-remover_tudo.addEventListener('mouseenter', mostra_mensagem = () => {
-    mensagem_btn_remove_all.style.display = 'flex'
-})
-remover_tudo.addEventListener('mouseout', esconder_mensagem = () => {
-    mensagem_btn_remove_all.style.display = 'none'
-})
 
 select.addEventListener('click', todolist = (e) => {
     var tud = ul.childNodes

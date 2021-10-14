@@ -13,12 +13,14 @@
 <body>
     <div>
         <section id="container">
-            <h1 id="titulo">To-do List</h1>
+            <header>
+                <h1 id="titulo">To-do List</h1>
+            </header>
             <div id="conteiner_input">
                 
                 <div id="input_add">
                     <input type="text" placeholder="tarefa" id="task">
-                    <button id="ad" onclick="add()"> <i class="tiny material-icons">add</i></button>
+                    <button id="ad" onclick="add()"> <i class="material-icons">add</i></button>
                 </div>
                 
                 <select name="select_situation" id="select_situation">
@@ -29,7 +31,7 @@
                 
                 <div id="container_remove_all">
                     <a href="#" id="remove_all" onmouseenter="mostra_mensagem()">
-                        <i class="material-icons">delete</i>
+                        <i class="material-icons icones">delete</i>
                     </a>
                     <p id="mensagem_btn_remove_all">Remover tudo</p>
                 </div>

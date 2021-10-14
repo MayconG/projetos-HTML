@@ -16,9 +16,17 @@ body {
     0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-#titulo {
+header {
     display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+.icones {
+    color: black;
+}
+
+#titulo {
     font-size: 21pt;
     margin: 10px;
 }
@@ -38,11 +46,14 @@ ul {
     font-size: 2em;
 }
 
+#container_remove_all:hover > p {
+    display: flex;
+}
+
 #remove_all {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
 }
 
 #mensagem_btn_remove_all {
