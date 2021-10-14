@@ -1,0 +1,180 @@
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf) format('opentype');
+
+}
+
+:root {
+    --cor1: #6ec974;
+    --cor2: #11471e;
+    --cor3: #c5ebd6;
+    --cor4: #1b702f;
+    --font1: android, sans-serif;
+    --font2: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    text-indent: 15px;
+}
+
+body {
+    background: #d8d8d8ef;
+    font-family: var(--font2);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    color: white;
+    min-height: 150px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.582);
+    padding: 10px 0px;
+    text-align: center;
+}
+
+header > h1 {
+    margin: 15px;
+    font-size: 3em;
+}
+
+header > p{
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+}
+
+nav {
+    background: var(--cor2);
+    padding: 10px 0;
+    text-align: left;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.295);
+}
+
+nav > a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    transition-duration: 1s;
+}
+
+main {
+    background: white;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.473);
+    text-align: justify;
+}
+
+main p {
+    margin: 15px 0;
+}
+
+main img {
+    width: 100%;
+}
+
+.pequena {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+
+article > h1{
+    font-family: var(--font1);
+    color: var(--cor2);
+}
+
+.externo {
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+.externo::after {
+    content: '00A0\1F517';
+}
+
+.externo:hover {
+    text-decoration: underline;
+}
+
+article > picture {
+    display: flex;
+    justify-content: center;
+}
+
+#video {
+    position: relative;
+    padding: 15px;
+    height: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+    background: var(--cor2);
+}
+
+#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.subtitulos {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    color: var(--cor2);
+    font-family: var(--font1);
+    font-weight: lighter;
+}
+
+.importante {
+    color: var(--cor1);
+}
+
+aside {
+    width: 98%;
+    height: 98%;
+    background: var(--cor3);
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+}
+
+aside > h1 {
+    background: var(--cor4);
+    color: white;
+    text-indent: 8px;
+    padding: 3px;
+    border-radius: 10px 10px 0 0;
+}
+
+ul{
+    list-style-type: '\2714\0020\0020'; /* esses numeros são os codigos dos emojis*/
+    columns: 2;
+    list-style-position: inside;
+}
+
+footer {
+    background: var(--cor2);
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+}

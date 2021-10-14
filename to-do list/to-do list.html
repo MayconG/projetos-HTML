@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="to-do.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+</head>
+<body>
+    <div>
+        <section id="container">
+            <h1 id="titulo">To-do List</h1>
+            <div id="conteiner_input">
+                
+                <div id="input_add">
+                    <input type="text" placeholder="tarefa" id="task">
+                    <button id="ad" onclick="add()"> <i class="tiny material-icons">add</i></button>
+                </div>
+                
+                <select name="select_situation" id="select_situation">
+                    <option value="Todos">Todos</option>
+                    <option value="completos">completos</option>
+                    <option value="incompletos">incompletos</option>
+                </select>
+                
+                <div id="container_remove_all">
+                    <a href="#" id="remove_all" onmouseenter="mostra_mensagem()">
+                        <i class="material-icons">delete</i>
+                    </a>
+                    <p id="mensagem_btn_remove_all">Remover tudo</p>
+                </div>
+            </div>
+            <fieldset id="container_tarefas">
+                <ul id="lista"></ul>
+            </fieldset>
+        </section>
+    </div>
+    <script src="to-do.js"></script>
+</body>
+</html>

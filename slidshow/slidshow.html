@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/m.ico" type="image/x-icon">
+    <title>slidshow</title>
+    <link rel="stylesheet" href="slidshow.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+</head>
+<body>
+    <main id="container">
+        <div class="container-slide">
+            <a href="#" class="action-button" id="previous"><i class="material-icons">arrow_back_ios</i></a>
+            <div class="container-items" id="container-items"></div>
+            <a href="#" class="action-button" id="next"><i class="material-icons">arrow_forward_ios</i></a>
+        </div>
+        <div class="opção">
+            <a href="#" id="slidshow">
+                <i class="material-icons" id="slid_icon" onclick="slidshow()">play_circle_outline</i>
+            </a>
+            <div class="ponto"></div>
+        </div>
+    </main>
+    <script src="slidshow.js"></script>
+</body>
+</html>

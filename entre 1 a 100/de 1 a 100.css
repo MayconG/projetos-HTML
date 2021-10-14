@@ -1,0 +1,30 @@
+body {
+    background: rgb(4, 184, 255);
+    font: normal 18px arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 420px;
+    box-shadow: 0, 0, 15px #121212;
+    margin: auto;
+}
+
+select {
+    width: 150px;
+}
+
+#txtval {
+    width: 140px;
+}
+
+#ad {
+    position: relative;left: 5px;
+}

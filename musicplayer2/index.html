@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>player de musica</title>
+    <link rel="stylesheet" href="player.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+</head>
+
+<body>
+<main class="container">
+    <h1><i class="material-icons">equalizer</i>music player</h1>
+    <div class="card-content">
+        <div class="card-image" style="background: url('https://placehold.it/500') no-repeat center center / cover"></div>
+
+        <div class="card">
+            <div id="titu_art">
+                <p style="font-size: 18pt;" id="titu">Titulo</p>
+                <p id="artista" style="font-size: 15pt;">Artista</p>
+            </div>
+
+            <div class="controls_buttons">
+                <div id="controles">
+                    <audio></audio>
+                    <div class="seekbar">
+                        <div id="ciclo_volume">
+                            <div>
+                                <a href="#" id="ciclo" onclick="player.mudar_ciclo()">
+                                    <i class="material-icons" id="ciclo_btn">repeat</i>
+                                    <p id="mensagem">cíclo da lista</p>
+                                </a>
+                            </div>
+                            <div class="volume">
+                                <a href="#"><i id="bt-volume" class="material-icons"
+                                        onclick="player.mutar()">volume_up</i></a>
+                                <input type="range" min=0 max=100 step="1" id="range-volume"
+                                    oninput="player.aume_dimi()">
+                            </div>
+                        </div>
+                        <input type="range" min=0 max=0 step="1" id="duração" oninput="player.seekb()">
+                        <div id="time">
+                            <div id="restante">00:00</div>
+                            <div id="total">00:00</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="avanvol">
+                    <a href="#"><i id="vol" onclick="player.voltar()" class="material-icons">skip_previous</i></a>
+                    <a href="#"><i id="play" onclick="player.playpause()" class="material-icons">play_arrow</i></a>
+                    <a href="#"><i id="avan" onclick="player.avançar()" class="material-icons">skip_next</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    <script src="data.js"></script>
+    <script src="player.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

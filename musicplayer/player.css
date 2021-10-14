@@ -1,0 +1,141 @@
+:root {
+    --cor_de_fundo: rgb(2, 82, 255);
+}
+
+body {
+    height: 100vh;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+}
+
+.card-content {
+    background-color: white;
+    width: 90%;
+    max-width: 350px;
+    height: 530px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+#title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title i{
+    color: var(--cor_de_fundo);
+    font-size: 2em;
+}
+
+h4 {
+    color: var(--cor_de_fundo);
+    font-size: 20pt;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center; /* o align-items vai mexer no eixo y, e o justify-content vai mexer no eixo x*/
+    justify-content: center;
+    padding: 12px;
+}
+
+.card-image {
+    background: url("https://placehold.it/500") no-repeat center center / cover;
+    width: 350px;
+    height: 218px;
+}
+
+h5 {
+    padding-left: 10px;
+}
+
+audio {
+    width: 100%;
+}
+
+.artista {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#avanvol {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+#avan, #vol, #play{
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--cor_de_fundo);
+}
+
+#duração, .tempo {
+    width: 90%;
+}
+
+#ciclo_btn {
+    color: var(--cor_de_fundo);
+}
+
+#mensagem {
+    display: none;
+    text-align: center;
+    background: black;
+    position: absolute;
+    margin: 0;
+    color: white;
+    width: 100px;
+    height: 22px;
+}
+
+#ciclo:hover > p{
+    display: block;
+}
+
+#tempo {
+    display: flex;
+    justify-content: center;
+}
+
+.tempo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#time {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#ciclo_volume {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 16px;
+}
+
+#controles {
+    display: flex;
+    justify-content: center;
+}
+
+#range-volume {
+    width: 50px;
+}
+
+#bt-volume {
+    color: var(--cor_de_fundo);
+}
+
+#meu_instagram {
+    display: flex;
+    align-items: center;
+}

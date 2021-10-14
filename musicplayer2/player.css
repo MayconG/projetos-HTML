@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --cor_de_fundo: rgb(70, 0, 199);
+}
+
+body {
+    height: 97.5vh;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    max-width: 695px;
+    max-height: 350px;
+    background-color: white;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    display: flex;
+    height: 90%;
+    max-width: 670px;
+    padding: 10px;
+}
+
+h1 {
+    color: var(--cor_de_fundo);
+    font: 2em 'Roboto', sans-serif bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.card-image {
+    background: url("https://placehold.it/500") no-repeat center center / cover;
+    height: 90%;
+    width: 90%;
+    max-width: 370px;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    max-width: 300px;
+    padding-left: 15px;
+}
+
+.controls_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+#duração {
+    width: 100%;
+}
+
+#titu {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+#artista {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+audio {
+    width: 100%;
+}
+
+#avanvol {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#time {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#avan, #vol, #play{
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--cor_de_fundo);
+}
+
+#range-volume {
+    width: 50px;
+}
+
+#bt-volume, #ciclo_btn {
+    color: var(--cor_de_fundo);
+}
+
+#ciclo_volume {
+    display: flex;
+    justify-content: space-between;
+}
+
+#mensagem {
+    display: none;
+    position: absolute;
+    margin: 0;
+    background-color: rgb(63, 63, 63);
+    color: rgb(218, 216, 216);
+    width: 100px;
+    padding-left: 6px;
+}
+
+#ciclo:hover > p{
+    display: block;
+}

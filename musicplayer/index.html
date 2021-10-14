@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/mp.ico" type="image/x-icon">
+    <title>player de musica</title>
+    <link rel="stylesheet" href="player.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+</head>
+
+<body>
+    <div class="card-content" onkeypress="play()">
+        <h4><i class="material-icons">equalizer</i>music player</h4>
+
+        <div class="card">
+            <div class="card-image"></div>
+            <div class="card_infos">
+                <h5 style="font-size: 14pt;">Titulo</h5>
+                <p class="artista">Artista</p>
+            </div>
+
+            <div id="ciclo_volume">
+                <a href="#" id="ciclo">
+                    <i class="material-icons" id="ciclo_btn" onclick="player.mudar_ciclo()">repeat</i>
+                    <p id="mensagem">ciclo da lísta</p>
+                </a>
+                <div class="volume">
+                    <a href="#"><i id="bt-volume" class="material-icons" onclick="player.mutar()">volume_up</i></a>
+                    <input type="range" min=0 max=100 step="1" id="range-volume" oninput="player.aume_dimi()">
+                </div>
+            </div>
+
+            <div id="controles">
+                <audio></audio>
+                <div class="tempo">
+                    <input type="range" min=0 max=0 step="1" id="duração" oninput="player.seekb()">
+                </div>
+            </div>
+
+            <div id="tempo">
+                <div id="time">
+                    <div id="restante">00:00</div>
+                    <div id="total">00:00</div>
+                </div>
+            </div>
+
+            <div id="avanvol">
+                <a href="#"><i id="vol" onclick="player.voltar()" class="material-icons">skip_previous</i></a>
+                <a href="#"><i id="play" onclick="player.playpause()" class="material-icons">play_arrow</i></a>
+                <a href="#"><i id="avan" onclick="player.avançar()" class="material-icons">skip_next</i></a>
+            </div>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="player.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
