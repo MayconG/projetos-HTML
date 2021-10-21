@@ -30,16 +30,16 @@ function clicar() {
             genero = 'mulher'
             if (idade >= 0 && idade <= 10) {
                 //criaça
-                imagem.setAttribute('src', 'menina.png')
+                imagem.setAttribute('src', 'imagens/menina.png')
             }else if (idade < 21) {
                 //jovem
-                imagem.setAttribute('src', 'mulher jovem.png')
+                imagem.setAttribute('src', 'imagens/mulher jovem.png')
             }else if (idade < 50) {
                 //adulto
-                imagem.setAttribute('src', 'mulher adulta.png')
+                imagem.setAttribute('src', 'imagens/mulher adulta.png')
             }else {
                 //idoso
-                imagem.setAttribute('src', 'mulher idosa.png')
+                imagem.setAttribute('src', 'imagens/mulher idosa.png')
             }
         }
         res.innerHTML = `detectamos ${genero} com ${idade} anos`
