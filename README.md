@@ -7,4 +7,3 @@
 <a href="https://maycong.github.io/projetos-HTML/musicplayer2">Player de musica<a> <br>
 <a href="https://maycong.github.io/projetos-HTML/verificador%20de%20ano">Verificador de ano<a> <br>
 <a href="https://maycong.github.io/projetos-HTML/tabuada">Tabuada<a> <br>
-<a href="https://maycong.github.io/projetos-HTML/contador/contador.html">Contador<a> <br>
